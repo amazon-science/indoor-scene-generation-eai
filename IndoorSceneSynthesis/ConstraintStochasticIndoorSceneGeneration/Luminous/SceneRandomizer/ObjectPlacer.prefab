@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5494522858583315036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5494522858583315037}
+  - component: {fileID: 647640824230030113}
+  - component: {fileID: 6443496072135216692}
+  m_Layer: 0
+  m_Name: ObjectPlacer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5494522858583315037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5494522858583315036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &647640824230030113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5494522858583315036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c3bf946e2f148bdaa5d6dd20f3fca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  physicsSceneManager: {fileID: 0}
+  spawner: {fileID: 0}
+  objectPool: {fileID: 0}
+  randomSeed: 0
+  furniturePlacerTool: {fileID: 0}
+  yoffset: 0.01
+  cornerList: []
+  borderList: []
+--- !u!114 &6443496072135216692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5494522858583315036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73fd054202874b9aa362ecf3c9d2000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomSeed: 0
+  objectList:
+  - {fileID: 3225658607347664279, guid: 839fafc39dd2ade4f98ae82202ef83ad, type: 3}
+  - {fileID: 1702258450416948, guid: e22705a1970a51749a40b21afa270d64, type: 3}
+  - {fileID: 1059182458350842, guid: bc989ef2ea0fce2489051cd3c4b1ca3d, type: 3}
+  - {fileID: 1522645609425478, guid: 2cc306022153c504f867733376e80bd1, type: 3}
+  - {fileID: 1778605729761012, guid: cdaf6c23a44f79e46b2bb2ec8f012381, type: 3}
+  - {fileID: 1779864465828064, guid: 95fd4a74f48124f4a956b16bc7e86233, type: 3}
+  - {fileID: 1864240998165294, guid: 7053df6e39914534abe24194b7f7598f, type: 3}
+  - {fileID: 1446328506187470, guid: f8b3f72950526c24994e0edbb09f7012, type: 3}
+  - {fileID: 1349562076682300, guid: 34a5d92f0ce7a2649be5f3f978ce5698, type: 3}
+  - {fileID: 1181093147710296, guid: e6be56dc0ce13b24dbc2f23fa7fdf586, type: 3}
+  - {fileID: 1837261613422012, guid: a812d790754af4d479f4d263249d23d7, type: 3}
+  roomType: 1
+  objectItemRules: []

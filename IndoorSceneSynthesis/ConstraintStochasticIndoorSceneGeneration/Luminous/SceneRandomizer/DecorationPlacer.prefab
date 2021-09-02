@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2218337360031987562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2218337360031987559}
+  - component: {fileID: 2218337360031987557}
+  - component: {fileID: 2297369676703409612}
+  m_Layer: 0
+  m_Name: DecorationPlacer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2218337360031987559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2218337360031987562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2218337360031987557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2218337360031987562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4355d8b3988d44f7b9e6423bb1c5221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomSeed: 0
+  roomType: 2
+  roomLayoutType: 0
+  furnitureItemRules: []
+  furnutureList:
+  - {fileID: 614764589087891805, guid: 9661df27e50f399499a655374bc90288, type: 3}
+  - {fileID: 3766437859846935813, guid: 15e81b4d0d1a547cd8a11786d0499178, type: 3}
+  - {fileID: 1872794551515394, guid: 9d38cf72db61f4c19a88627d023c0754, type: 3}
+  - {fileID: 1079595898826576, guid: fd2fd800e9fdd44cbb8a5edd7e456226, type: 3}
+  floorPhysics: {fileID: 0}
+  cornrerList: []
+  borderList: []
+--- !u!114 &2297369676703409612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2218337360031987562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7d7accb466de4cc0a6e454530bae75f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  physicsSceneManager: {fileID: 0}
+  spawner: {fileID: 0}
+  furniturePool: {fileID: 0}
+  yoffset: 0.05
+  randomSeed: 0

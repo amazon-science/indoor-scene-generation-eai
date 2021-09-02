@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7902544461443002384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7902544461443002386}
+  - component: {fileID: 7902544461443002385}
+  - component: {fileID: 7902544461443002387}
+  m_Layer: 0
+  m_Name: FurniturePlacer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7902544461443002386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902544461443002384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1079223, y: 3.1468532, z: -0.8847076}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7902544461443002385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902544461443002384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9ff609edd56476e9e3121295263c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  physicsSceneManager: {fileID: 0}
+  spawner: {fileID: 0}
+  furniturePool: {fileID: 0}
+  yoffset: 0.01
+  randomSeed: 0
+--- !u!114 &7902544461443002387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902544461443002384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4355d8b3988d44f7b9e6423bb1c5221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomSeed: 0
+  roomType: 1
+  roomLayoutType: 0
+  furnitureItemRules: []
+  furnutureList: []
+  kitchenTableList:
+  - {fileID: 4135108966619623714, guid: e858525d9aa50419ead12d48b67732ba, type: 3}
+  - {fileID: 8682470381867469888, guid: 2f20ca8f51a9e4c1c9744a7c822638da, type: 3}
+  - {fileID: 1121485991124254399, guid: 71b746ceaaca74d8f8da0b306cf8f6f9, type: 3}
+  floorPhysics: {fileID: 0}
+  cornrerList: []
+  borderList: []
