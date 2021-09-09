@@ -1,39 +1,10 @@
-![logo](Documents/imgs/logo.png)
-
-# Luminous Indoor Scene
-[![Build Status](https://travis-ci.org/chainer/chainerrl.svg?branch=master)](https://travis-ci.org/chainer/chainerrl)
-[![Coverage Status](https://coveralls.io/repos/github/chainer/chainerrl/badge.svg?branch=master)](https://coveralls.io/github/chainer/chainerrl?branch=master)
-[![Documentation Status](https://readthedocs.org/projects/chainerrl/badge/?version=latest)](http://chainerrl.readthedocs.io/en/latest/?badge=latest)
-[![PyPI](https://img.shields.io/pypi/v/chainerrl.svg)](https://pypi.python.org/pypi/chainerrl)
-
 **Luminous Indoor Scene** (LIS) is a deep reinforcement learning library that implements various state-of-the-art algorithms in Python for indoor-scene synthesis. 
 
 LIS integretes it code based on several datasets and platforms(e.g. [AI2Thor](https://ai2thor.allenai.org/)), and reinplemented state-of-the-art algorithms on [3D-front](https://ai2thor.allenai.org/).
 
-![eg1](Documents/imgs/1.png)
-![eg2](Documents/imgs/2.png)
-![eg3](Documents/imgs/3.png)
-
-## Installation
-
-LIS is tested with Python 3.7. For other requirements, see [requirements.txt](requirements.txt).
-
-LIS can be installed via PyPI:
-```
-pip install lis
-```
-
-It can also be installed from the source code:
-```
-python setup.py install
-```
-Refer to [Installation](http://chainerrl.readthedocs.io/en/latest/install.html) for more information on installation. 
-
-## Getting started
-
-You can try [ChainerRL Quickstart Guide](examples/quickstart/quickstart.ipynb) first, or check the [examples](examples) ready for Atari 2600 and Open AI Gym.
-
-For more information, you can refer to [ChainerRL's documentation](http://chainerrl.readthedocs.io/en/latest/index.html).
+![eg1](../../Documents/imgs/1.png)
+![eg2](../../Documents/imgs/2.png)
+![eg3](../../Documents/imgs/3.png)
 
 ## Table of contents
 
@@ -46,7 +17,34 @@ For more information, you can refer to [ChainerRL's documentation](http://chaine
     - [Rendering in Blender](#Rendering-in-blender)
 
 
-## Platforms
+## Quickstart
+
+Follow the instruction to generate indoor scene by CSSG on Unity Editor:
+
+1. Clone AI2Thor:
+```bash
+$ git clone https://github.com/allenai/ai2thor
+$ cd ai2thor/unity/Assets 
+```
+
+2. Clone the **Luminous** folder into *unity/Assets/* and rename it as *Custom*
+
+```bash
+$ mv Luminous/ Custom/ 
+```
+
+3. Follow the image instructions to generate scenes from CDF:
+
+![cssg_1](../../Documents/imgs/cssg_1.png)
+First, locate the **clickme.unity** scene file and select the **SceneBuilder** in the game view
+
+![cssg_2](../../Documents/imgs/cssg_2.png)
+
+Then, select the **room type** in the inspector and click **Load merged json \& generate from all scenes** button to generate scenes based on CDFs.
+
+![cssg_3](../../Documents/imgs/cssg_3.png)
+The generated scenes are saved into **Custom/BuildScenes/**.
+
 
 
 ## Algorithms
@@ -62,13 +60,10 @@ For more information, you can refer to [ChainerRL's documentation](http://chaine
 
 Following algorithms original based on [SUNCG](https://sscnet.cs.princeton.edu/) have been implemented in this repository on [3D-Front](https://arxiv.org/abs/2011.09127):
 - [Grains (Generative Recursive Autoencoders for INdoor Scenes)](https://arxiv.org/pdf/1807.09193.pdf)
-  - reimplementation details: 
-- [PlanIT (planning and instantiating indoor scenes with relation graph and spatial prior networks)](https://dl.acm.org/doi/pdf/10.1145/3306346.3322941)
-  - reimplementation details: 
+<!-- - [PlanIT (planning and instantiating indoor scenes with relation graph and spatial prior networks)](https://dl.acm.org/doi/pdf/10.1145/3306346.3322941) -->
 - [3D-SLN (End-to-End Optimization of Scene Layout)](http://3dsln.csail.mit.edu/papers/3dsln_cvpr.pdf)
-  - reimplementation details: 
 - [ST-AOG (Human-centric Indoor Scene Synthesis Using Stochastic Grammar)](https://arxiv.org/pdf/1808.08473.pdf)
-  - reimplementation details: 
+
 
 <!-- ## Acknowledgement
 
