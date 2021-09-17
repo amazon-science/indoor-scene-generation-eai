@@ -1,0 +1,56 @@
+{
+    "task_desc": "pick_and_place_simple-WineBottle-None-Shelf-7/trial_T20190908_114629_589874",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "WineBottle_1",
+                "location": [
+                    {
+                        "Cabinet_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Shelf_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "WineBottle_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "WineBottle_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Shelf_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Shelf_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "WineBottle_1",
+                    "receptacle_name": "Shelf_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan7"
+    }
+}

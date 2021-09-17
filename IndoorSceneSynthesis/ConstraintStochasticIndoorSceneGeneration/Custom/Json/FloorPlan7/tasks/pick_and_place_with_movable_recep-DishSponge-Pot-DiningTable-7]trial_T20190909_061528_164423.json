@@ -1,0 +1,80 @@
+{
+    "task_desc": "pick_and_place_with_movable_recep-DishSponge-Pot-DiningTable-7/trial_T20190909_061528_164423",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Shelf_1"
+            },
+            {
+                "name": "DishSponge_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Pot_1",
+                "location": [
+                    {
+                        "StoveBurner_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "DishSponge_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "DishSponge_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Pot_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Pot_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Pot_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "DiningTable_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "DiningTable_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "DishSponge_1",
+                    "receptacle_name": "Pot_1"
+                },
+                {
+                    "name": "Pot_1",
+                    "receptacle_name": "DiningTable_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan7"
+    }
+}

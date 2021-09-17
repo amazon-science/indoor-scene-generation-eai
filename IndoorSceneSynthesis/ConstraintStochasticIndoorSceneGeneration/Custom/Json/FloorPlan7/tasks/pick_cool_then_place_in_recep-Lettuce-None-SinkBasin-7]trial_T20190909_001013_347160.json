@@ -1,0 +1,73 @@
+{
+    "task_desc": "pick_cool_then_place_in_recep-Lettuce-None-SinkBasin-7/trial_T20190909_001013_347160",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Lettuce_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Lettuce_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Lettuce_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "OpenObject",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Lettuce_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "SinkBasin_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Lettuce_1",
+                    "receptacle_name": "SinkBasin_1"
+                },
+                {
+                    "name": "Lettuce_1",
+                    "ObjectTemperature": "Cold"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan7"
+    }
+}

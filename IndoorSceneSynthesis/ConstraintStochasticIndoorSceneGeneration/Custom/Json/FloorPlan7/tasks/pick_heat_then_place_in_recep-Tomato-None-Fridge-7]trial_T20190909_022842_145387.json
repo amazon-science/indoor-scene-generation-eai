@@ -1,0 +1,95 @@
+{
+    "task_desc": "pick_heat_then_place_in_recep-Tomato-None-Fridge-7/trial_T20190909_022842_145387",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Tomato_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Microwave_1"
+            },
+            {
+                "name": "Fridge_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Tomato_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Tomato_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "OpenObject",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "CloseObject",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "ToggleObjectOn",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "ToggleObjectOff",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "OpenObject",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Tomato_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Fridge_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Tomato_1",
+                    "receptacle_name": "Fridge_1"
+                },
+                {
+                    "name": "Tomato_1",
+                    "ObjectTemperature": "Hot"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan7"
+    }
+}

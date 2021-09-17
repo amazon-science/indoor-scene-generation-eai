@@ -1,0 +1,68 @@
+{
+    "task_desc": "pick_clean_then_place_in_recep-Kettle-None-Shelf-7/trial_T20190907_200421_808214",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Kettle_1",
+                "location": [
+                    {
+                        "StoveBurner_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Shelf_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Kettle_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Kettle_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "CleanObject",
+            "name": "Kettle_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Shelf_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Shelf_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Kettle_1",
+                    "receptacle_name": "Shelf_1"
+                },
+                {
+                    "name": "Kettle_1",
+                    "isDirty": false
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan7"
+    }
+}
