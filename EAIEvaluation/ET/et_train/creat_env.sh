@@ -1,7 +1,4 @@
-# aws configure
-aws configure
-AKIAWWL64HQ4WOPELXVR
-tAa1RTViLtK74ZbPQQN0AXdInLlNmaP5+NCjtLca
+
 
 git clone https://github.com/alexpashevich/E.T..git ET
 
@@ -20,12 +17,6 @@ pip install -r requirements.txt
 wget http://pascal.inrialpes.fr/data2/apashevi/et_checkpoints.zip
 unzip et_checkpoints.zip
 mv pretrained $ET_LOGS/
-
-# load data
-cd data
-aws s3 cp --recursive  s3://yizhou-data/generated_2.1.0 generated_2.1.0/
-aws s3 cp --recursive s3://yizhou-data/new_generated_716/ new_generated_716/
-aws s3 cp --recursive s3://zhiwei-data/generated_45k_1 generated_45k_1/
 
 # get console
 sudo apt-get install xorg openbox
