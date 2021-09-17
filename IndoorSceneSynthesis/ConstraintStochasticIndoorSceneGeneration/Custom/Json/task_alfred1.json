@@ -1,0 +1,101 @@
+﻿{
+    "task_desc": "look/trial_T20190906_200929_072857",
+    "scene": {
+        "scene_type": [1, 2],
+        "simbot_init": [{
+                "Table_1": "visible"
+            },
+            {
+                "Table_1": "nearby"
+            }
+        ],
+        "required_objects": [
+            {
+                "name": "Sofa_1",
+            },
+            {
+                "name": "Sofa_2",
+            },
+            {
+                "name": "CoffeeTable_1",
+                "location": [{
+                    "Sofa_1": "besides",
+                }]
+            },
+            {
+                "name": "Pillow_1",
+                "location": [{
+                    "Sofa_1": "on"
+                }]
+            },
+            {
+                "name": "Book_1",
+                "state": [{
+                    "isOpen": false
+                }],
+                "location": [{
+                    "CoffeeTable_1": "on"
+                }]
+            },
+            {
+                "name": "Plate_1",
+                "location": [{
+                    "CoffeeTable_1": "on"
+                }]
+            },
+            {
+                "name": "TVStand_1",
+            },
+            {
+                "name": "RemoteControl_1",
+                "location": [{
+                    "CoffeeTable_1": "on"
+                }]
+            },
+            {
+                "name": "Television_1",
+                "location": [{
+                    "TVStand_1": "on"
+                }]
+            },
+            {
+                "name": "FloorLamp_1",
+            },
+            {
+                "name": "Dresser_1",
+                "location": [{
+                    "FloorLamp_1": "besides"
+                }]
+            },
+            {
+                "name": "Vase_1",
+                "location": [{
+                    "Dresser_1": "on"
+                }]
+            },
+            {
+                "name": "Vase_2",
+                "location": [{
+                    "Dresser_1": "on"
+                }]
+            },
+        ]
+    },
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "FloorLamp_1",
+                    "isToggled": true,
+                    "visible": true
+                },
+                {
+                    "name": "Pillow_1",
+                    "inHand": true
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ]
+}

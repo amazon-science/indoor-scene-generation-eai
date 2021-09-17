@@ -1,0 +1,25 @@
+﻿{
+  "task_desc": "",
+  "scene": {
+    "scene_type": [
+      2
+    ],
+    "agent_init": [],
+    "init_actions": [],
+    "required_objects": [
+      {
+        "name": "Cup_1",
+        "location": [
+          {
+            "CounterTop_3": "on"
+          }
+        ]
+      }
+    ]
+  },
+  "script": [],
+  "task_goals": [],
+  "attributes": {
+    "floor_plan": "FloorPlan301"
+  }
+}

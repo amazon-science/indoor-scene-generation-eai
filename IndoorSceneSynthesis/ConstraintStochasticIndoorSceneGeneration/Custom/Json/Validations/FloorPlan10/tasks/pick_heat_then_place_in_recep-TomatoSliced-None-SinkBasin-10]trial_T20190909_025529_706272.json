@@ -1,0 +1,163 @@
+{
+    "task_desc": "pick_heat_then_place_in_recep-TomatoSliced-None-SinkBasin-10/trial_T20190909_025529_706272",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "CounterTop_1"
+            },
+            {
+                "name": "ButterKnife_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "SinkBasin_1"
+            },
+            {
+                "name": "Tomato_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Microwave_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Knife_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Knife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Tomato_1"
+        },
+        {
+            "action": "SliceObject",
+            "name": "Tomato_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "HeatObject",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "SinkBasin_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "TomatoSliced_1",
+                    "receptacle_name": "SinkBasin_1"
+                },
+                {
+                    "name": "TomatoSliced_1",
+                    "ObjectTemperature": "Hot"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": true,
+        "object_target": "Tomato",
+        "parent_target": "SinkBasin",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "Knife_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Knife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "SliceObject",
+            "name": "Tomato_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "HeatObject",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "SinkBasin_1"
+        }
+    ]
+}

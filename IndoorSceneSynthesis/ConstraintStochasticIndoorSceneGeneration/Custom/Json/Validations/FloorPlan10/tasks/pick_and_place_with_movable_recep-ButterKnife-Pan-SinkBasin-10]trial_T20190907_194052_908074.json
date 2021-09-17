@@ -1,0 +1,120 @@
+{
+    "task_desc": "pick_and_place_with_movable_recep-ButterKnife-Pan-SinkBasin-10/trial_T20190907_194052_908074",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "CounterTop_1"
+            },
+            {
+                "name": "ButterKnife_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "StoveBurner_1"
+            },
+            {
+                "name": "Pan_1",
+                "location": [
+                    {
+                        "StoveBurner_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "ButterKnife_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "ButterKnife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Pan_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Pan_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Pan_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "SinkBasin_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "ButterKnife_1",
+                    "receptacle_name": "Pan_1"
+                },
+                {
+                    "name": "Pan_1",
+                    "receptacle_name": "SinkBasin_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    },
+    "pddl_params": {
+        "mrecep_target": "Pan",
+        "object_sliced": false,
+        "object_target": "ButterKnife",
+        "parent_target": "SinkBasin",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "ButterKnife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "StoveBurner_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Pan_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Pan_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "SinkBasin_1"
+        }
+    ]
+}

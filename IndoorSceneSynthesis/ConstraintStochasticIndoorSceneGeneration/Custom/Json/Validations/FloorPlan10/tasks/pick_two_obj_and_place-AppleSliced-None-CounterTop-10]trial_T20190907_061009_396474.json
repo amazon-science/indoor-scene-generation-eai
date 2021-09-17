@@ -1,0 +1,176 @@
+{
+    "task_desc": "pick_two_obj_and_place-AppleSliced-None-CounterTop-10/trial_T20190907_061009_396474",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "SinkBasin_1"
+            },
+            {
+                "name": "Apple_1",
+                "location": [
+                    {
+                        "SinkBasin_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "CounterTop_1"
+            },
+            {
+                "name": "Apple_2",
+                "location": [
+                    {
+                        "SinkBasin_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Knife_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Knife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Apple_1"
+        },
+        {
+            "action": "SliceObject",
+            "name": "Apple_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "AppleSliced_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "AppleSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "AppleSliced_2"
+        },
+        {
+            "action": "PickupObject",
+            "name": "AppleSliced_2"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "AppleSliced_1",
+                    "receptacle_name": "CounterTop_1"
+                },
+                {
+                    "name": "AppleSliced_2",
+                    "receptacle_name": "CounterTop_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": true,
+        "object_target": "Apple",
+        "parent_target": "CounterTop",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "Knife_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Knife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "SliceObject",
+            "name": "Apple_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "AppleSliced_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "AppleSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "AppleSliced_2"
+        },
+        {
+            "action": "PickupObject",
+            "name": "AppleSliced_2"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        }
+    ]
+}

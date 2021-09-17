@@ -1,0 +1,69 @@
+﻿{
+    "task_desc": "pickplace/trial_T20190907_125249_700188",
+    "scene": {
+        "scene_type": [1, 2],
+        "simbot_init": [{
+                "Bed_1": "visible"
+            },
+            {
+                "Bed_1": "nearby"
+            }
+        ],
+        "required_objects": [
+            {
+                "name": "Bed_1",
+            },
+            {
+                "name": "SideTable_1",
+            },
+            {
+                "name": "Desk_1",
+                "location": [{
+                    "Bed_1": "away"
+                }]
+            },
+            {
+                "name": "KeyChain_1",
+                "location": [{
+                    "SideTable_1": "on"
+                }]
+            },
+            {
+                "name": "Book_1",
+                "state": [{
+                    "isOpen": false
+                }],
+                "location": [{
+                    "Desk_1": "on"
+                }]
+            },
+            {
+                "name": "AlarmClock",
+                "location": [{
+                    "Desk_1": "on"
+                }]
+            },
+            {
+                "name": "Chair_1",
+                "location": [{
+                    "Desk_1": "face"
+                }]
+            },
+            {
+                "name": "Laptop_1",
+                "location": [{
+                    "Desk_1": "on"
+                }]
+            }
+        ]
+    },
+    "task_goals": [{
+            "goal_id": 0,
+            "object_states": [{
+                "name": "Book_1",
+                "receptacle_name": "Bed_1"
+            }],
+            "object_states_relation": "and"
+        }
+    ]
+}

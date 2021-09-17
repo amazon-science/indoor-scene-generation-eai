@@ -1,0 +1,101 @@
+{
+	"task_desc": "Reading challeng, turn on the DeskLamp and start reading",
+	"scene": {
+		"scene_type": [1, 2],
+		"simbot_init": [{
+				"Bed_1": "visible"
+			},
+			{
+				"Bed_1": "nearby"
+			}
+		],
+		"required_objects": [
+			{
+				"name": "Bed_1",
+			}
+			,{
+				"name": "Desk_1",
+				"location": [{
+					"Bed_1": "away"
+				}]
+			},
+		    {
+				"name": "Desk_2",
+				"location": [{
+					"Desk_1": "besides"
+				}]
+			},
+			{
+				"name": "Book_1",
+				"state": [{
+					"isOpen": false
+				}],
+				"location": [{
+					"Desk_1": "on"
+				}]
+			},
+			{
+				"name": "Laptop_1",
+				"state": [{
+					"isOpen": false
+				}],
+				"location": [{
+					"Desk_2": "on"
+				}]
+			},
+			{
+				"name": "DeskLamp_1",
+				"state": [{
+					"isToggled": false
+				}],
+				"location": [{
+					"Desk_1": "on"
+				}]
+			},
+			{
+				"name": "Chair_1",
+				"location": [{
+					"Desk_2": "face"
+				}]
+			},
+			{
+				"name": "TVStand_1",
+				"location": [{
+					"Bed_1": "away"
+				}]
+			},
+			{
+				"name": "Television_1",
+				"location": [{
+					"TVStand_1": "on"
+				}]
+			},
+			{
+				"name": "LightSwitch_1",
+				"state": [{
+					"isToggled": false
+				}]
+			},
+			{
+				"name": "Painting_1",
+			}
+		]
+	},
+	"task_goals": [{
+			"goal_id": 0,
+			"object_states": [{
+				"name": "Book_1",
+				"isOpen": true
+			}],
+			"object_states_relation": "and"
+		},
+		{
+			"goal_id": 1,
+			"object_states": [{
+				"name": "DeskLamp_1",
+				"isToggled": true
+			}],
+			"object_states_relation": "and"
+		}
+	]
+}

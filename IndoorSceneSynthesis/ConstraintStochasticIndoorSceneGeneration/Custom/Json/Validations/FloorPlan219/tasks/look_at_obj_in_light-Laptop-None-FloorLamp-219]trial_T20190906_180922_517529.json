@@ -1,0 +1,88 @@
+{
+    "task_desc": "look_at_obj_in_light-Laptop-None-FloorLamp-219/trial_T20190906_180922_517529",
+    "scene": {
+        "scene_type": [
+            1
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Dresser_1"
+            },
+            {
+                "name": "Laptop_1",
+                "location": [
+                    {
+                        "Dresser_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "FloorLamp_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Laptop_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Laptop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "FloorLamp_1"
+        },
+        {
+            "action": "ToggleObjectOn",
+            "name": "FloorLamp_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "FloorLamp_1",
+                    "isToggled": true
+                },
+                {
+                    "name": "Laptop_1",
+                    "isPickedUp": true
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan219"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "Laptop",
+        "parent_target": "",
+        "toggle_target": "FloorLamp"
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "Dresser_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Laptop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "FloorLamp_1"
+        },
+        {
+            "action": "ToggleObjectOn",
+            "name": "FloorLamp_1"
+        }
+    ]
+}

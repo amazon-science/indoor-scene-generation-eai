@@ -1,0 +1,88 @@
+{
+    "task_desc": "look_at_obj_in_light-BasketBall-None-DeskLamp-308/trial_T20190907_161252_926204",
+    "scene": {
+        "scene_type": [
+            2
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "BasketBall_1"
+            },
+            {
+                "name": "Desk_1"
+            },
+            {
+                "name": "DeskLamp_1",
+                "location": [
+                    {
+                        "Desk_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "BasketBall_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "BasketBall_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "DeskLamp_1"
+        },
+        {
+            "action": "ToggleObjectOn",
+            "name": "DeskLamp_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "DeskLamp_1",
+                    "isToggled": true
+                },
+                {
+                    "name": "BasketBall_1",
+                    "isPickedUp": true
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan308"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "BasketBall",
+        "parent_target": "",
+        "toggle_target": "DeskLamp"
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "BasketBall_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "BasketBall_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Desk_1"
+        },
+        {
+            "action": "ToggleObjectOn",
+            "name": "DeskLamp_1"
+        }
+    ]
+}

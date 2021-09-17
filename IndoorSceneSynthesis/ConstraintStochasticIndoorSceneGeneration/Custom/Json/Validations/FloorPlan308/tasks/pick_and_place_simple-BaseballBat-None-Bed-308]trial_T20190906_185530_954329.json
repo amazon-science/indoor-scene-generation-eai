@@ -1,0 +1,76 @@
+{
+    "task_desc": "pick_and_place_simple-BaseballBat-None-Bed-308/trial_T20190906_185530_954329",
+    "scene": {
+        "scene_type": [
+            2
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "BaseballBat_1"
+            },
+            {
+                "name": "Bed_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "BaseballBat_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "BaseballBat_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Bed_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Bed_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "BaseballBat_1",
+                    "receptacle_name": "Bed_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan308"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "BaseballBat",
+        "parent_target": "Bed",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "BaseballBat_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "BaseballBat_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Bed_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Bed_1"
+        }
+    ]
+}

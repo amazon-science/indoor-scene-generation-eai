@@ -1,0 +1,128 @@
+{
+    "task_desc": "pick_two_obj_and_place-SoapBar-None-GarbageCan-424/trial_T20190909_064221_368939",
+    "scene": {
+        "scene_type": [
+            3
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "CounterTop_1"
+            },
+            {
+                "name": "SoapBar_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "GarbageCan_1"
+            },
+            {
+                "name": "SoapBar_2",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "SoapBar_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "SoapBar_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "GarbageCan_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "GarbageCan_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SoapBar_2"
+        },
+        {
+            "action": "PickupObject",
+            "name": "SoapBar_2"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "GarbageCan_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "GarbageCan_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "SoapBar_1",
+                    "receptacle_name": "GarbageCan_1"
+                },
+                {
+                    "name": "SoapBar_2",
+                    "receptacle_name": "GarbageCan_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan424"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "SoapBar",
+        "parent_target": "GarbageCan",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "SoapBar_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "GarbageCan_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "GarbageCan_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "SoapBar_2"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "GarbageCan_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "GarbageCan_1"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "task_desc": "pick_and_place_simple-Mug-None-Desk-308/trial_T20190908_125200_737896",
+    "scene": {
+        "scene_type": [
+            2
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Shelf_1"
+            },
+            {
+                "name": "Mug_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Desk_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Mug_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Mug_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Desk_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Desk_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Mug_1",
+                    "receptacle_name": "Desk_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan308"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "Mug",
+        "parent_target": "Desk",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "Shelf_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Mug_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Desk_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Desk_1"
+        }
+    ]
+}

@@ -1,0 +1,157 @@
+{
+    "task_desc": "pick_cool_then_place_in_recep-TomatoSliced-None-CounterTop-10/trial_T20190909_061805_153515",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "CounterTop_1"
+            },
+            {
+                "name": "Knife_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Tomato_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Knife_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Knife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Tomato_1"
+        },
+        {
+            "action": "SliceObject",
+            "name": "Tomato_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "CoolObject",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "TomatoSliced_1",
+                    "receptacle_name": "CounterTop_1"
+                },
+                {
+                    "name": "TomatoSliced_1",
+                    "ObjectTemperature": "Cold"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": true,
+        "object_target": "Tomato",
+        "parent_target": "CounterTop",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Knife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "SliceObject",
+            "name": "Tomato_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "CoolObject",
+            "name": "TomatoSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        }
+    ]
+}

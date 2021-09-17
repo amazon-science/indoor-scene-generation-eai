@@ -1,0 +1,102 @@
+{
+    "task_desc": "",
+    "scene": {
+        "scene_type": [
+            2
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "BasketBall_1"
+            },
+            {
+                "name": "Desk_1"
+            },
+            {
+                "name": "Shelf_1"
+            },
+            {
+                "name": "BaseballBat_1"
+            },
+            {
+                "name": "Bed_1"
+            },
+            {
+                "name": "Safe_1"
+            },
+            {
+                "name": "GarbageCan_1"
+            },
+            {
+                "name": "DeskLamp_1",
+                "location": [
+                    {
+                        "Desk_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Bowl_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Pencil_1",
+                "location": [
+                    {
+                        "Desk_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Mug_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Book_1",
+                "location": [
+                    {
+                        "Bed_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "CD_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "CD_2",
+                "location": [
+                    {
+                        "Desk_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "AlarmClock_1",
+                "location": [
+                    {
+                        "Desk_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [],
+    "task_goals": [],
+    "attributes": {
+        "floor_plan": "FloorPlan308"
+    }
+}

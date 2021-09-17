@@ -1,0 +1,84 @@
+{
+    "task_desc": "pick_and_place_simple-SaltShaker-None-Drawer-10/trial_T20190909_021650_880235",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Cabinet_1"
+            },
+            {
+                "name": "SaltShaker_1",
+                "location": [
+                    {
+                        "Cabinet_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Drawer_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "SaltShaker_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "SaltShaker_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Drawer_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Drawer_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "SaltShaker_1",
+                    "receptacle_name": "Drawer_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "SaltShaker",
+        "parent_target": "Drawer",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "Cabinet_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "SaltShaker_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Drawer_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Drawer_1"
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "task_desc": "pick_and_place_with_movable_recep-KeyChain-Box-ArmChair-219/trial_T20190918_185132_685516",
+    "scene": {
+        "scene_type": [
+            1
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "SideTable_1"
+            },
+            {
+                "name": "KeyChain_1",
+                "location": [
+                    {
+                        "SideTable_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Shelf_1"
+            },
+            {
+                "name": "Box_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "KeyChain_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "KeyChain_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Box_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Box_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Box_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "ArmChair_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "ArmChair_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "KeyChain_1",
+                    "receptacle_name": "Box_1"
+                },
+                {
+                    "name": "Box_1",
+                    "receptacle_name": "ArmChair_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan219"
+    },
+    "pddl_params": {
+        "mrecep_target": "Box",
+        "object_sliced": false,
+        "object_target": "KeyChain",
+        "parent_target": "ArmChair",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "SideTable_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "KeyChain_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Shelf_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Box_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Box_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "ArmChair_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "ArmChair_1"
+        }
+    ]
+}

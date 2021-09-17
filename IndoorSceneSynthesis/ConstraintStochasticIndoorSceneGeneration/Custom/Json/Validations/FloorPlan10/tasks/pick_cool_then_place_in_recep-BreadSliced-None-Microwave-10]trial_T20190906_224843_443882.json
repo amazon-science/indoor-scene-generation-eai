@@ -1,0 +1,163 @@
+{
+    "task_desc": "pick_cool_then_place_in_recep-BreadSliced-None-Microwave-10/trial_T20190906_224843_443882",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "CounterTop_1"
+            },
+            {
+                "name": "ButterKnife_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Fridge_1"
+            },
+            {
+                "name": "Bread_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Microwave_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "ButterKnife_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "ButterKnife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Bread_1"
+        },
+        {
+            "action": "SliceObject",
+            "name": "Bread_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "BreadSliced_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "BreadSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "CoolObject",
+            "name": "BreadSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Microwave_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "BreadSliced_1",
+                    "receptacle_name": "Microwave_1"
+                },
+                {
+                    "name": "BreadSliced_1",
+                    "ObjectTemperature": "Cold"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": true,
+        "object_target": "Bread",
+        "parent_target": "Microwave",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "ButterKnife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "SliceObject",
+            "name": "Bread_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "BreadSliced_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "BreadSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "CoolObject",
+            "name": "BreadSliced_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Microwave_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Microwave_1"
+        }
+    ]
+}

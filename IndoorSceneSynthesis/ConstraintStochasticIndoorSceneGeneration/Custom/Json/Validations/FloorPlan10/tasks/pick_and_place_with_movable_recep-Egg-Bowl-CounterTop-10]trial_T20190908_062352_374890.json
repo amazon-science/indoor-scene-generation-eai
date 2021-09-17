@@ -1,0 +1,120 @@
+{
+    "task_desc": "pick_and_place_with_movable_recep-Egg-Bowl-CounterTop-10/trial_T20190908_062352_374890",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "CounterTop_1"
+            },
+            {
+                "name": "Egg_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Cabinet_1"
+            },
+            {
+                "name": "Bowl_1",
+                "location": [
+                    {
+                        "Cabinet_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Egg_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Egg_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Bowl_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Bowl_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Bowl_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Egg_1",
+                    "receptacle_name": "Bowl_1"
+                },
+                {
+                    "name": "Bowl_1",
+                    "receptacle_name": "CounterTop_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    },
+    "pddl_params": {
+        "mrecep_target": "Bowl",
+        "object_sliced": false,
+        "object_target": "Egg",
+        "parent_target": "CounterTop",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Egg_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Cabinet_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Bowl_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Bowl_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        }
+    ]
+}
