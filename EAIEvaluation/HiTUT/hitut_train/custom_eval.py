@@ -1,5 +1,21 @@
 import numpy as np
 import revtok
+import os
+from tqdm import tqdm
+
+def load_all_trial_paths(train_root):
+    all_trial_paths = []
+    for train_task in tqdm(os.listdir(train_root)):
+        trial_folder = os.path.join(train_root, train_task)
+
+        if len(os.listdir(trial_folder)) == 0:
+            os.rmdir(trial_folder)
+            continue
+
+        for trial in os.listdir(trial_folder):
+            json_path = os.path.join(trial_folder, trial, "traj_data.json")
+            all_trial_paths.append(json_path)
+    return all_trial_paths
 
 def remove_spaces(s):
     cs = ' '.join(s.split())

@@ -33,16 +33,16 @@ Comment start line 4397:// check if the object should be forced to only check up
 Comment end line 4402: // ok we are holding something, time to try and place it
 
 4. Follow the image instructions to generation one scene from one CDF:
-![one_scene_1](../../Documents/imgs/one_scene_1.png)
+![one_scene_1](../../Documents/imgs/one_scene1.png)
 In Luminous, we provide 120 scene structures for scene generation, the image above points out the location of the empty scene prefabs (scene structures). 
 
-![one_scene_2](../../Documents/imgs/one_scene_2.png)
+![one_scene_2](../../Documents/imgs/one_scene2.png)
 You may choose any of the one scenes from the folders (livingrooms/bedrooms/kitchens/bathrooms); then open it
 
-![one_scene_3](../../Documents/imgs/one_scene_3.png)
+![one_scene_3](../../Documents/imgs/one_scene3.png)
 Get the **HelperTool** prefab in the *Custom/SceneRandomizer/* folder and drag it into the scene hierarchy
 
-![one_scene_4](../../Documents/imgs/one_scene_4.png)
+![one_scene_4](../../Documents/imgs/one_scene4.png)
 Then, (1) click the scene builder; (2) fill in the path of your cdf file (we provide some samples in the *Custom/Json* folder); (3) Set a random seed as you like; (4) choose the correct room type suggested in the cdf and choose whether to generate drawer/shelf/cabinet (default false for better experience) (4) Click buttons **Load Json...** and **Generate Scene from current prefab** to generate one scene under current cdf this scene structure.
 
 ![one_scene_5](../../Documents/imgs/one_scene_5.png)
