@@ -45,7 +45,7 @@ Get the **HelperTool** prefab in the *Custom/SceneRandomizer/* folder and drag i
 ![one_scene_4](../../Documents/imgs/one_scene4.png)
 Then, (1) click the scene builder; (2) fill in the path of your cdf file (we provide some samples in the *Custom/Json* folder); (3) Set a random seed as you like; (4) choose the correct room type suggested in the cdf and choose whether to generate drawer/shelf/cabinet (default false for better experience) (4) Click buttons **Load Json...** and **Generate Scene from current prefab** to generate one scene under current cdf this scene structure.
 
-![one_scene_5](../../Documents/imgs/one_scene_5.png)
+![one_scene_5](../../Documents/imgs/one_scene5.png)
 If the **Console** log prints *successfully generated objects and furniture*, the scene will be saved in **BuildScenes**.
 
 
