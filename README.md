@@ -56,7 +56,7 @@ See **EAIEvaluation** folder for more details.
 Luminous
 │   readme.md   
 │
-└─── [EAIEvaluation](EAIEvaluation/)
+└─── [EAIEvaluation](EAIEvaluation/readme.md)
 │   │   ET
 │   │   MOCA
 │   │   HiTUT
