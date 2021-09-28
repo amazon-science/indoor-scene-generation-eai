@@ -52,11 +52,10 @@ See **EAIEvaluation** folder for more details.
 
 # Folder structure
 
-```
 Luminous
 │   readme.md   
 │
-└─── ![EAIEvaluation](EAIEvaluation/readme.md)
+└─── [EAIEvaluation](EAIEvaluation/readme.md)
 │   │   ET
 │   │   MOCA
 │   │   HiTUT
@@ -72,4 +71,3 @@ Luminous
 │   │   TaskSampler
 │   │   TaskSolver
     
-```
