@@ -19,6 +19,7 @@ from models.model.mmt import MultiModalTransformer
 from models.train.optimizer import NoamOpt
 from models.utils.bert_utils import bert_config
 
+from tqdm import tqdm
 
 def train_one_epoch(model, optimizer, data_loader, counts, loss_weights=None):
     model.train()
@@ -27,7 +28,7 @@ def train_one_epoch(model, optimizer, data_loader, counts, loss_weights=None):
     logging.info('Training [Level: %s]' % (model.args.train_level))
     epoch_start_time = time.time()
     logging.info('************ epoch: %d ************' %(counts['epoch']))
-    for batch in data_loader:
+    for batch in tqdm(data_loader):
         # count += 1
         # if count == 30:
         #     break
@@ -175,9 +176,33 @@ if __name__ == '__main__':
     formatter = argparse.ArgumentDefaultsHelpFormatter
     parser = argparse.ArgumentParser(formatter_class=formatter)
     Config(parser)
-    args = parser.parse_args()
-    bert_config(args)
 
+    #-----------------------------------
+
+    args = parser.parse_args()
+    args.gpu = True
+    args.use_bert = True
+    args.dropout = 0.1
+    args.enable_feat_posture = True
+    args.train_proportion = 100
+    args.valid_metric = "type"
+    args.focal_loss = True
+    args.emb_init = "xavier"
+    args.lr = 5e-5
+    args.batch = 12
+    args.bert_lr_schedule = True
+    args.early_stop = 2
+    args.seed = 999
+
+    args.bert_model = "roberta"
+    args.train_level = 'low'
+    args.pp_data = 'data/full_2.1.0_pp/'
+    args.low_data = "navi"
+    
+    args.exp_temp  = 'Aug19Thr'
+    #-----------------------------------
+
+    bert_config(args)
 
     # set seeds
     torch.manual_seed(args.seed)

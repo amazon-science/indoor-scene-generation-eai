@@ -1,0 +1,104 @@
+{
+    "task_desc": "pick_cool_then_place_in_recep-Mug-None-Cabinet-10/trial_T20190909_121710_650938",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "CoffeeMachine_1"
+            },
+            {
+                "name": "Mug_1",
+                "location": [
+                    {
+                        "CoffeeMachine_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Cabinet_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Mug_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Mug_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "CoolObject",
+            "name": "Mug_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Cabinet_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Cabinet_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Mug_1",
+                    "receptacle_name": "Cabinet_1"
+                },
+                {
+                    "name": "Mug_1",
+                    "ObjectTemperature": "Cold"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "Mug",
+        "parent_target": "Cabinet",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "CoffeeMachine_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Mug_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "CoolObject",
+            "name": "Mug_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Cabinet_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Cabinet_1"
+        }
+    ]
+}

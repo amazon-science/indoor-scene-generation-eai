@@ -1,0 +1,131 @@
+{
+    "task_desc": "pick_two_obj_and_place-KeyChain-None-Safe-219/trial_T20190909_012027_782483",
+    "scene": {
+        "scene_type": [
+            1
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Dresser_1"
+            },
+            {
+                "name": "KeyChain_1",
+                "location": [
+                    {
+                        "Dresser_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Safe_1"
+            },
+            {
+                "name": "Sofa_1"
+            },
+            {
+                "name": "KeyChain_2",
+                "location": [
+                    {
+                        "Sofa_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "KeyChain_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "KeyChain_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Safe_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Safe_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "KeyChain_2"
+        },
+        {
+            "action": "PickupObject",
+            "name": "KeyChain_2"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Safe_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Safe_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "KeyChain_1",
+                    "receptacle_name": "Safe_1"
+                },
+                {
+                    "name": "KeyChain_2",
+                    "receptacle_name": "Safe_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan219"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "KeyChain",
+        "parent_target": "Safe",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "Dresser_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "KeyChain_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Safe_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Safe_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Sofa_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "KeyChain_2"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Safe_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Safe_1"
+        }
+    ]
+}

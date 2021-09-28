@@ -1,0 +1,128 @@
+{
+    "task_desc": "pick_two_obj_and_place-Pillow-None-Sofa-219/trial_T20190907_163240_345855",
+    "scene": {
+        "scene_type": [
+            1
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "ArmChair_1"
+            },
+            {
+                "name": "Pillow_1",
+                "location": [
+                    {
+                        "ArmChair_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Sofa_1"
+            },
+            {
+                "name": "Pillow_2",
+                "location": [
+                    {
+                        "ArmChair_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Pillow_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Pillow_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Sofa_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Sofa_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Pillow_2"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Pillow_2"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Sofa_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Sofa_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Pillow_1",
+                    "receptacle_name": "Sofa_1"
+                },
+                {
+                    "name": "Pillow_2",
+                    "receptacle_name": "Sofa_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan219"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "Pillow",
+        "parent_target": "Sofa",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "ArmChair_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Pillow_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Sofa_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Sofa_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "ArmChair_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Pillow_2"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Sofa_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Sofa_1"
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "task_desc": "pick_two_obj_and_place-CD-None-Safe-308/trial_T20190907_050942_897916",
+    "scene": {
+        "scene_type": [
+            2
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Desk_1"
+            },
+            {
+                "name": "CD_1",
+                "location": [
+                    {
+                        "Desk_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Safe_1"
+            },
+            {
+                "name": "CD_2",
+                "location": [
+                    {
+                        "Desk_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "CD_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "CD_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Safe_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Safe_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CD_2"
+        },
+        {
+            "action": "PickupObject",
+            "name": "CD_2"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Safe_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Safe_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "CD_1",
+                    "receptacle_name": "Safe_1"
+                },
+                {
+                    "name": "CD_2",
+                    "receptacle_name": "Safe_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan308"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "CD",
+        "parent_target": "Safe",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "Desk_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "CD_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Safe_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Safe_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Desk_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "CD_2"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Safe_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Safe_1"
+        }
+    ]
+}

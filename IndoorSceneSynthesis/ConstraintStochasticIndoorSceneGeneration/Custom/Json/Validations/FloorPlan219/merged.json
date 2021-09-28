@@ -1,0 +1,156 @@
+{
+    "task_desc": "",
+    "scene": {
+        "scene_type": [
+            1
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Dresser_1"
+            },
+            {
+                "name": "FloorLamp_1"
+            },
+            {
+                "name": "Cabinet_1"
+            },
+            {
+                "name": "ArmChair_1"
+            },
+            {
+                "name": "Shelf_1"
+            },
+            {
+                "name": "Safe_1"
+            },
+            {
+                "name": "Sofa_1"
+            },
+            {
+                "name": "SideTable_1"
+            },
+            {
+                "name": "Drawer_1"
+            },
+            {
+                "name": "CellPhone_1",
+                "location": [
+                    {
+                        "Dresser_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Newspaper_1",
+                "location": [
+                    {
+                        "Cabinet_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "RemoteControl_1",
+                "location": [
+                    {
+                        "ArmChair_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Box_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Laptop_1",
+                "location": [
+                    {
+                        "Dresser_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "KeyChain_1",
+                "location": [
+                    {
+                        "ArmChair_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Statue_1",
+                "location": [
+                    {
+                        "Dresser_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "TissueBox_1",
+                "location": [
+                    {
+                        "Dresser_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Vase_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "KeyChain_2",
+                "location": [
+                    {
+                        "ArmChair_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Pillow_1",
+                "location": [
+                    {
+                        "ArmChair_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Pillow_2",
+                "location": [
+                    {
+                        "ArmChair_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Watch_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "CreditCard_1",
+                "location": [
+                    {
+                        "Sofa_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [],
+    "task_goals": [],
+    "attributes": {
+        "floor_plan": "FloorPlan219"
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "task_desc": "pick_and_place_simple-Vase-None-Safe-219/trial_T20190908_205246_776817",
+    "scene": {
+        "scene_type": [
+            1
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Shelf_1"
+            },
+            {
+                "name": "Vase_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Safe_1"
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Vase_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Vase_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Safe_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Safe_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Vase_1",
+                    "receptacle_name": "Safe_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan219"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "Vase",
+        "parent_target": "Safe",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "Shelf_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Vase_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Safe_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Safe_1"
+        }
+    ]
+}

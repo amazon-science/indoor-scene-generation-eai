@@ -1,0 +1,120 @@
+{
+    "task_desc": "pick_and_place_with_movable_recep-ButterKnife-Cup-SinkBasin-10/trial_T20190909_025413_784807",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "SinkBasin_1"
+            },
+            {
+                "name": "ButterKnife_1",
+                "location": [
+                    {
+                        "SinkBasin_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Cabinet_1"
+            },
+            {
+                "name": "Cup_1",
+                "location": [
+                    {
+                        "Cabinet_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "ButterKnife_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "ButterKnife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Cup_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Cup_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Cup_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "SinkBasin_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "ButterKnife_1",
+                    "receptacle_name": "Cup_1"
+                },
+                {
+                    "name": "Cup_1",
+                    "receptacle_name": "SinkBasin_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    },
+    "pddl_params": {
+        "mrecep_target": "Cup",
+        "object_sliced": false,
+        "object_target": "ButterKnife",
+        "parent_target": "SinkBasin",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "ButterKnife_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Cabinet_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Cup_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Cup_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "SinkBasin_1"
+        }
+    ]
+}

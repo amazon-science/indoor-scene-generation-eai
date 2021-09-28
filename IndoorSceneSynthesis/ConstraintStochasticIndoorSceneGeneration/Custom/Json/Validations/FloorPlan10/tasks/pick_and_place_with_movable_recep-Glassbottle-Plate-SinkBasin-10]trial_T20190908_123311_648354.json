@@ -1,0 +1,120 @@
+{
+    "task_desc": "pick_and_place_with_movable_recep-Glassbottle-Plate-SinkBasin-10/trial_T20190908_123311_648354",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "CounterTop_1"
+            },
+            {
+                "name": "Glassbottle_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Cabinet_1"
+            },
+            {
+                "name": "Plate_1",
+                "location": [
+                    {
+                        "Cabinet_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Glassbottle_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Glassbottle_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Plate_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Plate_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Plate_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "SinkBasin_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Glassbottle_1",
+                    "receptacle_name": "Plate_1"
+                },
+                {
+                    "name": "Plate_1",
+                    "receptacle_name": "SinkBasin_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    },
+    "pddl_params": {
+        "mrecep_target": "Plate",
+        "object_sliced": false,
+        "object_target": "Glassbottle",
+        "parent_target": "SinkBasin",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Glassbottle_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Cabinet_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Plate_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Plate_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "SinkBasin_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "SinkBasin_1"
+        }
+    ]
+}

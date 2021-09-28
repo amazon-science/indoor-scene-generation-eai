@@ -1,0 +1,117 @@
+{
+    "task_desc": "pick_and_place_with_movable_recep-Pencil-Bowl-Shelf-308/trial_T20190909_185126_784929",
+    "scene": {
+        "scene_type": [
+            2
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Desk_1"
+            },
+            {
+                "name": "Pencil_1",
+                "location": [
+                    {
+                        "Desk_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Bowl_1",
+                "location": [
+                    {
+                        "Desk_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Pencil_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Pencil_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Bowl_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Bowl_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Bowl_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Shelf_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Shelf_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Pencil_1",
+                    "receptacle_name": "Bowl_1"
+                },
+                {
+                    "name": "Bowl_1",
+                    "receptacle_name": "Shelf_1"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan308"
+    },
+    "pddl_params": {
+        "mrecep_target": "Bowl",
+        "object_sliced": false,
+        "object_target": "Pencil",
+        "parent_target": "Shelf",
+        "toggle_target": ""
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "Desk_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Pencil_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Desk_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Bowl_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Bowl_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Shelf_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Shelf_1"
+        }
+    ]
+}

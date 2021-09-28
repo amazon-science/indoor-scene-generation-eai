@@ -1,0 +1,96 @@
+{
+    "task_desc": "look_at_obj_in_light-CD-None-DeskLamp-308/trial_T20190908_142046_281296",
+    "scene": {
+        "scene_type": [
+            2
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Shelf_1"
+            },
+            {
+                "name": "CD_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Desk_1"
+            },
+            {
+                "name": "DeskLamp_1",
+                "location": [
+                    {
+                        "Desk_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "CD_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "CD_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "DeskLamp_1"
+        },
+        {
+            "action": "ToggleObjectOn",
+            "name": "DeskLamp_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "DeskLamp_1",
+                    "isToggled": true
+                },
+                {
+                    "name": "CD_1",
+                    "isPickedUp": true
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan308"
+    },
+    "pddl_params": {
+        "mrecep_target": "",
+        "object_sliced": false,
+        "object_target": "CD",
+        "parent_target": "",
+        "toggle_target": "DeskLamp"
+    },
+    "high_pddl": [
+        {
+            "action": "GotoLocation",
+            "name": "Shelf_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "CD_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Desk_1"
+        },
+        {
+            "action": "ToggleObjectOn",
+            "name": "DeskLamp_1"
+        }
+    ]
+}

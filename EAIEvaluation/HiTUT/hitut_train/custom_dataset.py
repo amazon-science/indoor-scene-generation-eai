@@ -57,7 +57,7 @@ class CustomDataset(object):
                 self.batch_size = self.args.batch
 
             self.init_statistics()
-            self.preprocess_data()
+            # self.preprocess_data()
             # self.prepare_data_instances()
             #self.save_statistics()
 
@@ -774,8 +774,8 @@ if __name__ == '__main__':
     parser.add_argument('--skip_detection', action='store_true')
     args = parser.parse_args()
 
-    args.raw_data = "data/lumi_navi2/"
-    args.pp_data = "data/lumi_navi2_pp"
+    args.raw_data = "data/lumi_navi/"
+    args.pp_data = "data/lumi_navi_pp"
     args.gpu = True
     args.preprocess = True
     args.fast_epoch = False
@@ -785,4 +785,4 @@ if __name__ == '__main__':
 
     pprint.pprint(args)
     dataset = CustomDataset(args)
-    # dataset.prepare_data_instances()
+    dataset.prepare_data_instances()

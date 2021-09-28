@@ -1,0 +1,81 @@
+{
+    "task_desc": "",
+    "scene": {
+        "scene_type": [
+            3
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "CounterTop_1"
+            },
+            {
+                "name": "Toilet_1"
+            },
+            {
+                "name": "GarbageCan_1"
+            },
+            {
+                "name": "Cabinet_1"
+            },
+            {
+                "name": "Plunger_1"
+            },
+            {
+                "name": "Cloth_1"
+            },
+            {
+                "name": "ToiletPaperHanger_1"
+            },
+            {
+                "name": "SinkBasin_1"
+            },
+            {
+                "name": "SoapBottle_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "SoapBar_1",
+                "location": [
+                    {
+                        "Toilet_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "SoapBar_2",
+                "location": [
+                    {
+                        "Toilet_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "ToiletPaper_1",
+                "location": [
+                    {
+                        "Toilet_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "ToiletPaper_2",
+                "location": [
+                    {
+                        "ToiletPaperHanger_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [],
+    "task_goals": [],
+    "attributes": {
+        "floor_plan": "FloorPlan424"
+    }
+}

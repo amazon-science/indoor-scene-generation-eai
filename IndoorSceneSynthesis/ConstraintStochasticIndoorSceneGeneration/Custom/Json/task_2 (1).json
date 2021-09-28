@@ -1,0 +1,74 @@
+{
+	"task_desc": "Making breakfast: Place a toasted bread slice into the bowl.",
+	"scene": {
+		"scene_type": [0],
+		"simbot_init": [{
+				"Bed_1": "visible"
+			},
+			{
+				"Bed_1": "nearby"
+			}
+		],
+		"required_objects": 
+		[
+			{
+				"name": "CounterTop_1"
+			},
+			{
+				"name": "DiningTable_1"
+			},
+			{
+				"name": "Bread_1",
+				"location": [{"DiningTable_1": "on"}]
+			},
+			{
+				"name": "Knife_1",
+				"state": [{"isOpen": false}],
+				"location": [{"DiningTable_1": "on"}]
+			},
+			{
+				"name": "Fork_1",
+				"location": [{"DiningTable_1": "on"}]
+			},
+			{
+				"name": "Toaster_1",
+				"location": [{"CounterTop_1": "on"}]
+			},
+			{
+				"name": "Bowl_1",
+				"location": [{"CounterTop_1": "on"},{"Toaster_1": "besides"}]
+			},
+		]
+	}, 
+"task_goals": 
+    [
+    	{
+            "goal_id": 0,
+            "object_states": 
+                [
+                    {
+                        "name": "Bread_1",
+                        "isSliced": true
+                    }
+                ],
+            "object_states_relation": "and" 
+        },
+        {
+            "goal_id": 1,
+            "object_states": 
+                [
+                    {
+                        "name": "Bread_1_Sliced_1",
+                        "receptacle_name": "Bowl_1",
+                        "spatial_relation": "in"
+                    },
+                             {
+                        "name": "Bread_1",
+                        "isSliced": true
+                    }
+
+                ],
+            "object_states_relation": "and" 
+        }
+    ]
+}

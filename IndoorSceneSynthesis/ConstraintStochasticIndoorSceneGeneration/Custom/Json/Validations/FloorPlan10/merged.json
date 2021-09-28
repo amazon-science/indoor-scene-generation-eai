@@ -1,0 +1,231 @@
+{
+    "task_desc": "",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "SinkBasin_1"
+            },
+            {
+                "name": "Microwave_1"
+            },
+            {
+                "name": "CounterTop_1"
+            },
+            {
+                "name": "Cabinet_1"
+            },
+            {
+                "name": "Shelf_1"
+            },
+            {
+                "name": "Drawer_1"
+            },
+            {
+                "name": "Fridge_1"
+            },
+            {
+                "name": "GarbageCan_1"
+            },
+            {
+                "name": "CoffeeMachine_1"
+            },
+            {
+                "name": "StoveBurner_1"
+            },
+            {
+                "name": "Apple_1",
+                "location": [
+                    {
+                        "SinkBasin_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Bowl_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Spoon_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Mug_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "SaltShaker_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "PepperShaker_1",
+                "location": [
+                    {
+                        "Cabinet_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "PepperShaker_2",
+                "location": [
+                    {
+                        "Cabinet_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "ButterKnife_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Tomato_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Pan_1",
+                "location": [
+                    {
+                        "StoveBurner_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Egg_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Knife_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Lettuce_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Potato_1",
+                "location": [
+                    {
+                        "SinkBasin_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Knife_2",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Plate_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Bread_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Spatula_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Cup_1",
+                "location": [
+                    {
+                        "Cabinet_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Glassbottle_1",
+                "location": [
+                    {
+                        "SinkBasin_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Fork_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "Apple_2",
+                "location": [
+                    {
+                        "SinkBasin_1": "on"
+                    }
+                ]
+            },
+            {
+                "name": "ButterKnife_2",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [],
+    "task_goals": [],
+    "attributes": {
+        "floor_plan": "FloorPlan10"
+    }
+}

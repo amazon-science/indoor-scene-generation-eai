@@ -1,0 +1,76 @@
+{
+    "task_desc": "pick_cool_then_place_in_recep-Plate-None-Shelf-7/trial_T20190907_124749_594195",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Shelf_1"
+            },
+            {
+                "name": "Plate_1",
+                "location": [
+                    {
+                        "Shelf_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Plate_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Plate_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "OpenObject",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Plate_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Shelf_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Shelf_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Plate_1",
+                    "receptacle_name": "Shelf_1"
+                },
+                {
+                    "name": "Plate_1",
+                    "ObjectTemperature": "Cold"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan7"
+    }
+}

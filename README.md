@@ -56,7 +56,7 @@ See **EAIEvaluation** folder for more details.
 Luminous
 │   readme.md   
 │
-└───EAIEvaluation
+└─── EAIEvaluation
 │   │   ET
 │   │   MOCA
 │   │   HiTUT
@@ -71,5 +71,13 @@ Luminous
 │   │   TaskParser
 │   │   TaskSampler
 │   │   TaskSolver
-    
 ```
+# Quick links
+
+[EAIEvaluation](EAIEvaluation/readme.md)
+
+[CSSG](IndoorSceneSynthesis/ConstraintStochasticIndoorSceneGeneration/readme.md)
+
+[NaturalLanguageTool](Luminous4Alfred/NaturalLanguageTools/readme.md)
+
+[3DFrontToolBox](IndoorSceneSynthesis/3DFrontToolBox/readme.md)

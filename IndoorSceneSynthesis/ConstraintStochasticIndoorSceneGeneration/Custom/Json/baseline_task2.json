@@ -1,0 +1,99 @@
+﻿{
+    "task_desc": "Placeholder",
+    "scene": {
+        "scene_type": [1, 2],
+        "simbot_init": [{
+                "Sofa_1": "visible"
+            },
+            {
+                "Sofa_1": "nearby"
+            }
+        ],
+        "required_objects": [
+            {
+                "name": "Sofa_1",
+            },
+            {
+                "name": "CoffeeTable_1",
+                "location": [{
+                    "Sofa_1": "besides",
+                }]
+            }
+            ,{
+                "name": "Watch_1",
+                "location": [{
+                    "CoffeeTable_1": "on"
+                }]
+            },
+            {
+                "name": "Pillow_1",
+                "state": [{
+                    "isOpen": true
+                }],
+                "location": [{
+                    "Sofa_1": "on"
+                }]
+            },
+            {
+                "name": "Book_1",
+                "state": [{
+                    "isOpen": false
+                }],
+                "location": [{
+                    "CoffeeTable_1": "on"
+                }]
+            },
+            {
+                "name": "CreditCard_1",
+                "location": [{
+                    "CoffeeTable_1": "on"
+                }]
+            },
+            {
+                "name": "TVStand_1",
+            },
+            {
+                "name": "GarbageCan_1",
+                "location": [{
+                    "CoffeeTable_1": "away"
+                }]
+            },
+            {
+                "name": "Television_1",
+                "location": [{
+                    "TVStand_1": "on"
+                }]
+            },
+            {
+                "name": "FloorLamp_1",
+            },
+            {
+                "name": "Dresser_1",
+                "location": [{
+                    "FloorLamp_1": "besides"
+                }]
+            },
+            {
+                "name": "Vase_1",
+                "location": [{
+                    "Dresser_1": "on"
+                }]
+            },
+            {
+                "name": "Vase_2",
+                "location": [{
+                    "Dresser_1": "on"
+                }]
+            },
+        ]
+    },
+    "task_goals": [{
+            "goal_id": 0,
+            "object_states": [{
+                "name": "FloorLamp_1",
+                "isToggled": true
+            }],
+            "object_states_relation": "and"
+        }
+    ]
+}

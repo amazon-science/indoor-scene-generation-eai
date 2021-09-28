@@ -1,0 +1,73 @@
+{
+    "task_desc": "pick_cool_then_place_in_recep-Bread-None-CounterTop-7/trial_T20190909_012427_332210",
+    "scene": {
+        "scene_type": [
+            0
+        ],
+        "agent_init": [],
+        "init_actions": [],
+        "required_objects": [
+            {
+                "name": "Bread_1",
+                "location": [
+                    {
+                        "CounterTop_1": "on"
+                    }
+                ]
+            }
+        ]
+    },
+    "script": [
+        {
+            "action": "GotoLocation",
+            "name": "Bread_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Bread_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "OpenObject",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "Fridge_1"
+        },
+        {
+            "action": "PickupObject",
+            "name": "Bread_1"
+        },
+        {
+            "action": "GotoLocation",
+            "name": "CounterTop_1"
+        },
+        {
+            "action": "PutObject",
+            "name": "CounterTop_1"
+        }
+    ],
+    "task_goals": [
+        {
+            "goal_id": 0,
+            "object_states": [
+                {
+                    "name": "Bread_1",
+                    "receptacle_name": "CounterTop_1"
+                },
+                {
+                    "name": "Bread_1",
+                    "ObjectTemperature": "Cold"
+                }
+            ],
+            "object_states_relation": "and"
+        }
+    ],
+    "attributes": {
+        "floor_plan": "FloorPlan7"
+    }
+}
