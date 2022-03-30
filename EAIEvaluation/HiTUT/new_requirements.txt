@@ -52,7 +52,7 @@ more-itertools==8.6.0
 msgpack==1.0.2
 murmurhash==1.0.4
 networkx==2.3
-nltk==3.5
+nltk==3.6.6
 numpy
 oauthlib==3.1.0
 olefile==0.46
