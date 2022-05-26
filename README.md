@@ -1,3 +1,12 @@
+### Update 2022
+
+Add our code to parse 3D_Front dataset into Autodesk Maya
+
+See the [tutorial](Issue/Load3DFront2Maya-Tutorial.ipynb)
+
+
+
+
 ![logo](Documents/imgs/logo.png)
 
 **Luminous** is a framework for testing the performance of Embodied AI (EAI) models in indoor tasks. Generally, we intergrete different kind of functionalities into this repository that are related to evaluate EAI performance for indoor tasks. The **Indoor Scene Synthesis** module provides different methods for synthesize randomized indoor scenes that be visualized in Unity Engine. The **Luminous for Alfred** offers the complete pipline to conduct data augmentment such as generating Alfred tasks in Luminous, solving the trajectories of tasks, rendering images, and generating natural language descripitions. 
