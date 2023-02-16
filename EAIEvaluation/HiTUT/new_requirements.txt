@@ -118,6 +118,6 @@ vocab==0.0.5
 wasabi==0.8.0
 wcwidth==0.2.5
 websocket-client==0.57.0
-Werkzeug==2.0.1
+Werkzeug==2.2.3
 yarg==0.1.9
 zipp==3.4.0
