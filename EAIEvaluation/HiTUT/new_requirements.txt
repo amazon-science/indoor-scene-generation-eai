@@ -105,7 +105,7 @@ termcolor==1.1.0
 textworld @ https://github.com/MohitShridhar/TextWorld/archive/handcoded_expert_integration.zip
 thinc==7.4.3
 tokenizers==0.9.4
-torch==1.6.0
+torch==1.13.1
 torchfile==0.1.0
 torchvision==0.7.0
 tornado==6.1
