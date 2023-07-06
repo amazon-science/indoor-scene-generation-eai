@@ -92,7 +92,7 @@ retrying==1.3.3
 revtok==0.0.3
 rsa==4.7
 sacremoses==0.0.43
-scipy==1.5.4
+scipy==1.10.0
 sentencepiece==0.1.91
 six==1.15.0
 spacy==2.3.4
